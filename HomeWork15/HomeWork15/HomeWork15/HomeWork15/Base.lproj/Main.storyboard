@@ -44,7 +44,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="skip"/>
                                 <connections>
-                                    <action selector="skipButton:" destination="qIp-wd-tdk" eventType="touchUpInside" id="CCK-Sp-8mV"/>
+                                    <action selector="skip:" destination="qIp-wd-tdk" eventType="touchUpInside" id="3v7-g1-pPD"/>
                                 </connections>
                             </button>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7X5-Dd-bK2">

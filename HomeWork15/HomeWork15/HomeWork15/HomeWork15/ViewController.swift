@@ -35,9 +35,17 @@ class ViewController: UIViewController {
         
         
     }
-    @IBAction private func skip() {
-        debugPrint("Skipped")
-    }
-}
+    @IBAction func skip(_ sender: Any) {
 
-   
+        debugPrint("Skipped")
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let tabBarController = storyboard.instantiateViewController(withIdentifier: "UITabViewcontroller") as? UITabBarController {
+            tabBarController.modalPresentationStyle = .fullScreen
+            present(tabBarController, animated: true, completion: nil)
+        } else {
+            print("Failed to instantiate UITabViewcontroller")
+        }
+    }
+    
+}

@@ -1,9 +1,7 @@
 //
 //  SignUpViewController.swift
 //  HomeWork15
-//
-//  Created by Лика Котик on 08.07.2024.
-//
+
 
 import UIKit
 
@@ -97,9 +95,9 @@ class SignUpViewController: UIViewController {
     
     @objc private func goButtonTapped() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                if let tabBarController = storyboard.instantiateViewController(withIdentifier: "UITabViewcontroller") as? UITabBarController {
-                    tabBarController.modalPresentationStyle = .fullScreen
-                    present(tabBarController, animated: true)
-                }
-            }
+        if let tabBarController = storyboard.instantiateViewController(withIdentifier: "UITabViewcontroller") as? UITabBarController {
+            tabBarController.modalPresentationStyle = .fullScreen
+            present(tabBarController, animated: true)
         }
+    }
+}
