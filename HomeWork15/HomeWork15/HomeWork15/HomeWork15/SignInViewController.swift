@@ -74,5 +74,12 @@ class SignInViewController: UIViewController {
     @objc private func goButtonTapped() {
        
         debugPrint("Go button tapped")
-    }
-}
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                if let tabBarController = storyboard.instantiateViewController(withIdentifier: "UITabViewcontroller") as? UITabBarController {
+                    tabBarController.modalPresentationStyle = .fullScreen
+                    present(tabBarController, animated: true)
+                }
+            }
+        }
+    
