@@ -46,6 +46,6 @@ class ViewController: UIViewController {
         } else {
             print("Failed to instantiate UITabViewcontroller")
         }
-    }
     
+    }
 }
